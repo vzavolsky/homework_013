@@ -9,11 +9,6 @@ public class Main {
         firstBook.setPublicYear(2000);
         System.out.println("firstBook = " + firstBook.getPublicYear());
 
-        System.out.println(petrov);
-
         System.out.println("ivanov.getAuthorFamilyName() = " + ivanov.getAuthorFamilyName());
-        System.out.println(firstBook);
-        System.out.println(firstBook.getBookName() + ": " + firstBook.hashCode());
-        System.out.println(secondBook.getBookName() + ": " + secondBook.hashCode());
     }
 }
