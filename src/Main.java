@@ -15,5 +15,10 @@ public class Main {
         System.out.println(firstBook);
         System.out.println(firstBook.getBookName() + ": " + firstBook.hashCode());
         System.out.println(secondBook.getBookName() + ": " + secondBook.hashCode());
+
+        System.out.println(ivanov.equals(ivanov));
+        System.out.println(ivanov.equals(petrov));
+        System.out.println(firstBook.equals(secondBook));
+        System.out.println(firstBook.equals(firstBook));
     }
 }

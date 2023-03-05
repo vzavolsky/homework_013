@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Author {
     private String  authorName;
     private String authorFamilyName;
@@ -12,10 +14,14 @@ public class Author {
     }
     @Override
     public boolean equals(Object other) {
-        if (this.getClass() == other.getClass()) {
+        if (this == other) {
             return true;
         }
-        return false;
+        if (other == null || getClass() != other.getClass()) {
+            return false;
+        }
+        Author author = (Author) other;
+        return Objects.equals(authorName, author.authorName) && Objects.equals(authorFamilyName, author.authorFamilyName);
     }
     public String getAuthorName() {
         return this.authorName;
